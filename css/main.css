@@ -2,3 +2,29 @@ html, body {
 	background-color: white;
 	font-family: 'Abel', sans-serif;
 }
+
+/*#logo {
+	width:75px;
+	height:75px;
+	
+} 
+*/
+
+/* helper classes to see divs, remove later */
+.darkBG {
+	background-color: #666699;
+}
+
+.darkerBG {
+	background-color: #53537C;
+}
+
+.darkestBG {
+	background-color: #424263;
+}
+
+.nav-tabs {
+
+  border-color: #777777;
+  color:#fff;
+}
