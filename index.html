@@ -12,7 +12,7 @@
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    	<script src="js/angular.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 
       <title>| BWJ |</title>
 
@@ -46,7 +46,6 @@
             <li role="presentation" ng-click="lifestyle"><a href="#">Lifestyle</a></li>
 
 
-
             <li role="presentation"><a href="#">Resume</a></li>
           </ul>
         </div>
@@ -54,11 +53,16 @@
    
       <div class="container">
         <button ng-click="clickTest()">ng-click test</button>
+
           
       </div>
 
 
-    
+         <div class="containter">  
+              <lifestyle-info info="lifestyle"></lifestlye-info>
+              <install-lifestyle></install-lifestyle>
+            </div>
+         </div>
 
       <!--This is where my portfolio pages will go.-->
 
@@ -84,7 +88,7 @@
     <script src-="js/controllers/MainController.js"></script>
 
     <!--Directives -->
-    <script src="js/directives/lifestyle.js"> 
+    <script src="js/directives/lifestyle.js"></script>
 
   </body>
 </html>

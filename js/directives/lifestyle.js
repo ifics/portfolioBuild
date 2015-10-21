@@ -8,4 +8,4 @@ app.directive('lifestyle', function() {
   }; 
 })
     
-})  
+  

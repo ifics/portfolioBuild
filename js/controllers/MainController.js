@@ -9,11 +9,10 @@ app.controller('MainController', ['$scope', function($scope) {
 	  	icon: 'img/social-medial.jpg'
 	  }
 
-	$scope.clickTest = function(){
- 		alert("hello World");
 	];
 
+  //  $scope.clickTest = function(){
+ 	// 	alert("hello World");
  
- 
-
+ 	// };
 }]);
