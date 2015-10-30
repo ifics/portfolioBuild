@@ -10,6 +10,18 @@ html, body {
 } 
 */
 
+
+
+#img {
+	width: 300px;
+	height:300px;
+	padding: 20px 20px;
+	
+	
+}
+
+
+
 /* helper classes to see divs, remove later */
 .darkBG {
 	background-color: #666699;
@@ -28,3 +40,4 @@ html, body {
   border-color: #777777;
   color:#fff;
 }
+

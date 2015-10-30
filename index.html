@@ -12,63 +12,74 @@
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    	
 
       <title>| BWJ |</title>
 
   </head>
   <body ng-app="mySite">
+
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 darkBG">
-          <h1>LOGO HERE</h1>
-          <!-- ADD LOGO IMAGE HERE LATER<img src="img/logo.jpg" id="logo"> -->
+        <div class="row">
+          <div class="col-md-4 darkBG">
+            <h1>LOGO HERE</h1>
+            <!-- ADD LOGO IMAGE HERE LATER<img src="img/logo.jpg" id="logo"> -->
+          </div>
+        
+        <div class="container">
+          <div class="col-md-8 darkerBG">
+            <h1>Blake Johnson</h1>
+          </div>
         </div>
-      
+      </div>
+    
       <div class="container">
-        <div class="col-md-8 darkerBG">
-          <h1>Blake Johnson</h1>
+        <div class="main">
+
+          <div class="container">
+            <div class="row col-md-8 col-md-offset-4">
+              <ul class="nav nav-tabs nav-justified" ng-init="tab = 2">
+
+
+                <li role="presentation" ng-class="{ active: tab === 1 }">
+                <a href="#" ng-click="tab = 1">Projects</a>
+                </li>
+
+
+                <li role="presentation"  ng-class="{ active: tab === 2 }">
+                <a href="#2" ng-click="tab = 2">Lifestyle</a>
+                </li>
+
+
+                <li role="presentation" ng-class="{ active: tab === 3 }">
+                <a href="#3" ng-click="tab = 3">Resume</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+       
+           <div class="container" ng-controller="lifestyleController as lifestyle">
+
+            <p>{{ "hello " + "you" }}</p>
+
+            <div class="col-md-8 darkerBG" ng-show="tab === 2">
+              <div ng-repeat="content in contents">
+                
+                <h1>{{ content.title }}</h1>
+                <img id="img" ng-src="{{ content.icon }}">
+               
+
+              </div>  
+            </div>  
+
+
+          <!--This is where my portfolio pages will go.-->
+
+          </div>
         </div>
       </div>
     </div>
-  
-
-    <div class="main" ng-controller="MainController">
-
-      <div class="container">
-        <div class="row col-md-8 col-md-offset-4">
-          <ul class="nav nav-tabs nav-justified">
-
-
-            <li role="presentation" class="active" ><a href="#">Projects</a></li>
-
-
-            <li role="presentation" ng-click="lifestyle"><a href="#">Lifestyle</a></li>
-
-
-            <li role="presentation"><a href="#">Resume</a></li>
-          </ul>
-        </div>
-      </div>
-   
-      <div class="container">
-        <button ng-click="clickTest()">ng-click test</button>
-
-          
-      </div>
-
-
-         <div class="containter">  
-              <lifestyle-info info="lifestyle"></lifestlye-info>
-              <install-lifestyle></install-lifestyle>
-            </div>
-         </div>
-
-      <!--This is where my portfolio pages will go.-->
-
-
-
-      </div>
 
 
 
@@ -82,14 +93,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Modules -->
-    <script src="js/app.js"></script>
+   
 
     <!-- Controllers -->
-    <script src-="js/controllers/MainController.js"></script>
+    
 
     <!--Directives -->
-    <script src="js/directives/lifestyle.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 
+    <script src="app.js"></script>
   </body>
 </html>
 
