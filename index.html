@@ -21,14 +21,13 @@
 
     <div class="container">
         <div class="row">
-          <div class="col-md-4 darkBG">
-            <h1>LOGO HERE</h1>
-            <!-- ADD LOGO IMAGE HERE LATER<img src="img/logo.jpg" id="logo"> -->
+          <div class="col-md-4 col-xs-12 img-responsive">
+            <img src="img/logo.jpg" id="logo">
           </div>
         
         <div class="container">
-          <div class="col-md-8 darkerBG">
-            <h1>Blake Johnson</h1>
+          <div class="col-md-8">
+            <h1 class="text-right" id="name">Blake Johnson</h1><h3 class="text-right" id="name">| Web Developer |</h3>
           </div>
         </div>
       </div>
@@ -67,7 +66,7 @@
               <div ng-repeat="content in contents">
                 
                 <h1>{{ content.title }}</h1>
-                <img id="img" ng-src="{{ content.icon }}">
+                <img id="img" class="img-responsive" ng-src="{{ content.icon }}">
                
 
               </div>  

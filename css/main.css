@@ -3,23 +3,43 @@ html, body {
 	font-family: 'Abel', sans-serif;
 }
 
-/*#logo {
-	width:75px;
-	height:75px;
-	
-} 
-*/
 
 
+
+
+#logo {
+
+	width: 150px;
+	height: 150px;
+
+}
 
 #img {
 	width: 300px;
 	height:300px;
 	padding: 20px 20px;
 	
-	
 }
 
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 768px){
+
+	#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+	#name {
+		text-align: center;
+	}
+	
+
+}
 
 
 /* helper classes to see divs, remove later */
