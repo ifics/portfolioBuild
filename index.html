@@ -12,7 +12,6 @@
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    	
 
       <title>| BWJ |</title>
 
@@ -60,12 +59,7 @@
        
            <div class="container" ng-controller="lifestyleController as lifestyle">
 
-            <!-- A test to make sure Angular is loaded
-
-            <p>{{ "hello " + "you" }}</p> 
-
-            -->
-
+      
             <div class="col-md-8" ng-show="tab === 2">
               <div ng-repeat="content in contents">
                 
@@ -75,11 +69,7 @@
                
 
               </div>  
-            </div>  
-
-
-          <!--This is where my portfolio pages will go.-->
-
+            </div>   
           </div>
         </div>
       </div>
@@ -88,25 +78,37 @@
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 
+     <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
 
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Modules -->
    
 
     <!-- Controllers -->
     
+    <script src="js/controllers/lifestyleController.js"></script>
 
     <!--Directives -->
     
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 
-    <script src="app.js"></script>
+    <!-- USE THIS AS THE GULP BUILD FILE WHEN FINISHED
+
+     <script src="app.js"></script> 
+
+     -->
+
+     <!-- local jquery -->
+
+     <script src="js/jq.js"></script>
+
+    
+
   </body>
 </html>
 
