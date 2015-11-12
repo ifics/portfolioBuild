@@ -7,13 +7,15 @@
 
 	var lifestyleImages = [ 
 		   { 
-		    icon: 'img/sloth-life.jpg', 
-		    title: 'MOVE'
+		    image: 'img/seaweed-farmer.jpg', 
+		    title: 'A seaweed farmer tending her crop',
+		    location: 'Lembongan, Indonesia'
 		    
 		  },
 		  {
-		  	icon: 'img/social-media.jpg',
-		  	title: 'Tits on Sticks'
+		  	image: 'img/bridge-traffic.jpg',
+		  	title: 'Sunday Traffic',
+		  	location: 'Lembongan, Indonesia'
 		  }
 
 		];

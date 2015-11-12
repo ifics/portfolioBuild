@@ -66,11 +66,12 @@
 
             -->
 
-            <div class="col-md-8 darkerBG" ng-show="tab === 2">
+            <div class="col-md-8" ng-show="tab === 2">
               <div ng-repeat="content in contents">
                 
-                <h1>{{ content.title }}</h1>
-                <img id="img" class="img-responsive" ng-src="{{ content.icon }}">
+                <h3 id="name">{{ content.title }}</h3>
+                <p id="name">{{ content.location }}</p>
+                <img id="img" class="img-responsive center-block" ng-src="{{ content.image }}">
                
 
               </div>  
